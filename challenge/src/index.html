@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Epilogue", sans-serif;
+      }
+    </style>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header class="flex justify-between px-6 py-6 items-center">
+      <div class="left flex gap-12 items-center">
+        <div class="brand">
+          <h1 class="text-4xl font-bold">snap</h1>
+        </div>
+        <div class="nav-menu hidden lg:block">
+          <nav class="flex gap-8">
+            <a class="nav-link" href="">Features</a>
+            <a class="nav-link" href="">Company</a>
+            <a class="nav-link" href="">Career</a>
+            <a class="nav-link" href="">About</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="right flex items-center gap-8 hidden lg:flex">
+        <a class="nav-link" href="">Login</a>
+        <a
+          class="border-medium-gray border p-3 rounded-xl hover:border-almost-black transition-colors"
+          href=""
+          >Register</a
+        >
+      </div>
+
+      <div class="mobile-nav lg:hidden">
+        <img src="../images/icon-menu.svg" alt="" />
+      </div>
+    </header>
+
+    <main class="grid grid-cols-1 items-center mt-10 lg:grid-cols-2 lg:mt-20">
+      <div class="mobile-img lg:hidden mb-5">
+        <img src="../images/image-hero-mobile.png" alt="" />
+      </div>
+      <div
+        class="main__left justify-self-center flex flex-col gap-8 w-full p-3 items-center lg:justify-self-end lg:p-6 lg:w-3/4 lg:items-start"
+      >
+        <h1 class="text-4xl text-almost-black font-bold text-start lg:text-6xl">
+          Make remote work
+        </h1>
+        <p class="w-full text-center lg:w-3/4 lg:text-start">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit et eius
+          mollitia recusandae. Rerum iusto temporibus dolores fugit ab
+          veritatis.
+        </p>
+
+        <a
+          class="bg-almost-black p-3 rounded-xl text-almost-white w-1/2 lg:w-1/4 text-center hover:bg-almost-white hover:border hover: border-almost-black hover:transition hover:text-almost-black"
+          href=""
+          >Learn More</a
+        >
+        <div class="brands flex flex-col gap-8 items-center lg:flex-row">
+          <img src="../images/client-audiophile.svg" alt="" />
+          <img src="../images/client-databiz.svg" alt="" />
+          <img src="../images/client-meet.svg" alt="" />
+          <img src="../images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <div class="main__right justify-self-center hidden lg:block">
+        <img src="../images/image-hero-desktop.png " class="w-[450px]" alt="" />
+      </div>
+    </main>
+
+    <div class="attribution text-center mt-20">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://www.fiverr.com/fatihsoft?up_rollout=true"
+        >fatihsoft</a
+      >.
+    </div>
+  </body>
+</html>
